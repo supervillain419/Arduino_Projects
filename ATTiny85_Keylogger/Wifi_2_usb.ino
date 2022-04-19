@@ -3,6 +3,7 @@
 //Credits to p0wc0w.
 #include "DigiKeyboard.h"
 void setup() {
+/*empty*/
 }
 
 void loop() {
@@ -17,5 +18,7 @@ void loop() {
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.print("exit");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
-  for(;;){ /*empty*/ }
+  for(;;){
+  /*empty*/ 
+  }
 }

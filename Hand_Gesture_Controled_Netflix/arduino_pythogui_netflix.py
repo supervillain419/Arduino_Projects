@@ -10,8 +10,7 @@ while 1:
     print (incoming)
     
     if 'Play/Pause' in incoming:
-        #pyautogui.typewrite(['space'], 0.2)
-        pyautogui.click() 
+        pyautogui.typewrite(['space'], 0.2) 
 
     if 'Rewind' in incoming:
         pyautogui.hotkey('left')  

